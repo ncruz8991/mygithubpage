@@ -1,0 +1,22 @@
+body {
+  margin: 0; }
+
+#name {
+  background: #ACF0F2;
+  height: 1000px; }
+  #name p {
+    margin: 0 auto;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16; }
+
+#name
+#extra {
+  background: #F3FFE2;
+  height: 1000px; }
+
+#extra2 {
+  background: #EB6F00;
+  height: 1000px; }
+
+/*# sourceMappingURL=style.css.map */
