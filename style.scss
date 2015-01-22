@@ -3,6 +3,7 @@ $color2: #1695A3;
 $color3: #ACF0F2;
 $color4: #F3FFE2;
 $color5: #EB6F00;
+$div_size: 800px;
 $sans_font: 'Open Sans', Arial, sans-serif;
 
 body {
@@ -11,7 +12,8 @@ body {
 
 #name {
 	background: $color2;
-	height: 800px;
+	height: $div_size;
+	width: 100%;
 	p {
 		margin: auto;
 		font-family: $sans_font;
@@ -24,10 +26,10 @@ body {
 
 #extra {
 	background: $color4;
-	height: 800px;
+	height: $div_size;
 }
 
 #extra2 {
 	background: $color5;
-	height: 800px;
+	height: $div_size;
 }
