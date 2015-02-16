@@ -1,0 +1,35 @@
+/* line 10, ../sass/style.scss */
+body {
+  margin: 0;
+}
+
+/* line 14, ../sass/style.scss */
+#name {
+  background: #1695A3;
+  height: 800px;
+  width: 100%;
+}
+/* line 18, ../sass/style.scss */
+#name p {
+  margin: auto;
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 36pt;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* line 31, ../sass/style.scss */
+#extra {
+  background: #F3FFE2;
+  height: 800px;
+}
+
+/* line 36, ../sass/style.scss */
+#extra2 {
+  background: #EB6F00;
+  height: 800px;
+}

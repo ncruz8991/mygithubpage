@@ -4,7 +4,8 @@ $color3: #ACF0F2;
 $color4: #F3FFE2;
 $color5: #EB6F00;
 $div_size: 800px;
-$sans_font: 'Open Sans', Arial, sans-serif;
+$sans_font: 'Roboto', Arial, sans-serif;
+$font_weight: 200;
 
 body {
 	margin: 0;
@@ -13,13 +14,16 @@ body {
 #name {
 	background: $color2;
 	height: $div_size;
-	width: 100%;
+	width: 100%;	
 	p {
 		margin: auto;
 		font-family: $sans_font;
 		color: white;
-		font-weight: 300;
+		font-weight: $font_weight;
 		font-size: 36pt;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
 		text-align: center;
 	}
 }
