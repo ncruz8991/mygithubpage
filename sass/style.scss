@@ -13,18 +13,29 @@ body {
 
 #name {
 	background: $color2;
-	height: $div_size;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
 	width: 100%;	
 	p {
 		margin: auto;
 		font-family: $sans_font;
 		color: white;
 		font-weight: $font_weight;
-		font-size: 36pt;
+		font-size: 12pt;
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
 		text-align: center;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 }
 
