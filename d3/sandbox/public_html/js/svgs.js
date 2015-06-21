@@ -62,8 +62,10 @@ $(document).ready(function(){
     $(".mCircle").hover(function(){        
         $(this).velocity({
             r: 200
-        }, 300);
+        }, 400)
+            .delay(100)
+            .velocity("reverse");
     }, function(){
-        $(this).velocity("reverse");
+        
     });
 });
