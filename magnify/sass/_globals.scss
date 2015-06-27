@@ -1,0 +1,38 @@
+/*
+Hey! Are you a developer???
+*/
+/* 
+    Created on : Jun 25, 2015, 9:25:38 PM
+    Author     : Nick
+*/
+
+$darkblue: #2C3E50;
+$red: #E74C3C;
+$offwhite: #ECF0F1;
+$lightblue: #3498DB;
+$mediumblue: #2980B9;
+
+$female_undergrad: #EA80FC;
+$female_grad: #E040FB;
+$male_undergrad: #448AFF;
+$male_grad: #2962FF;
+
+$white: #FFFFFF;
+$grey100: #F5F5F5;
+$grey300: #E0E0E0;
+$grey400: #BDBDBD;
+$grey500: #9E9E9E;
+$grey700: #616161;
+$black: #000000;
+
+$font_stack: 'Roboto', Arial, sans-serif;
+
+// Use with the .inside divs for each section
+@mixin inside_section_params() {
+    max-width: 1500px;
+    width: 80%;
+    min-width: 400px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}

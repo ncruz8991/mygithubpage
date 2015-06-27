@@ -1,0 +1,147 @@
+/* 
+    Created on : Jun 27, 2015, 12:50:38 PM
+    Author     : Nick
+*/
+
+/*********************** Global Default Styles ***********************/
+.section {
+    width: 100%;
+    .inside {
+        @include inside_section_params();
+    }
+}
+
+.text_section {
+    height: 600px;
+}
+
+.graphic_section {
+    min-height: 750px;
+    height: auto;
+    .inside {        
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .infographic {
+            
+        }
+    }
+}
+
+$zen-column-count: 6;
+$zen-gutter-width: 12px;
+
+/*********************** Section-specific Styles ***********************/
+
+#title_section {
+    background-color: $darkblue;
+    min-height: 600px;
+    height: auto;
+    .inside {
+        #flag {
+            min-width: 150px;
+            width: 10%;
+            padding-top: 400px;
+            svg {
+                fill: $white;
+            }
+        }
+        #main_title {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 20px;
+            font-weight: 300;
+            font-size: 50px;
+            color: $white;
+        }
+        #author {
+            font-size: 14px;
+            color: $white;
+        }
+        #description {
+            padding-top: 10px;
+            font-size: 18px;
+            font-weight: 100;
+            color: $white;
+        }
+    }
+}
+
+#chart1_section {
+    
+}
+
+#break1 {
+    background-color: $mediumblue;
+}
+
+#chart_4D_section {
+    .inside {
+        @include zen-grid-container;
+        
+        .question_prompt {
+            @include zen-grid-item(6, 1);
+            padding-bottom: 30px;
+            
+            .prefix {
+                font-size: 32px;
+                font-weight: 500;
+                color: $mediumblue;
+            }
+            .question {
+                
+            }
+            .suffix {
+                
+            }
+        }
+        .infographic_details_left {            
+            @include zen-clear(both);
+            @include zen-grid-item(2, 1);
+            
+            padding: 40px 0px;
+            
+            .infographic_inside {
+                margin: 0 auto;
+                text-align: center;
+                vertical-align: top;
+                #chart_4D_default_prompt {
+                    color: $grey400;
+                }
+                #chart_4D_selected_prompt {
+                    p {
+                        margin: 0;
+                    }
+                    #chart_4D_percentage {
+                        display: inline;
+                        padding: 5px 10px;
+                        border-radius: 3px;
+                        font-size: 40px;
+                        font-weight: 100;
+                    }
+                    #chart_4D_percentage:after {
+                        content: "%"
+                    }                    
+                    #chart_4D_series {
+                        font-size: 24px;
+                    }
+                    #chart_4D_category_description {
+                        font-size: 18px;
+                    }
+                    .static {
+                        padding: 20px 0px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        #chart_4D {
+            @include zen-grid-item(4, 3);
+            //display: inline-block;
+            height: 600px;
+        }
+    }
+}
+
+#break2 {
+    background-color: $darkblue;
+}
