@@ -2,9 +2,6 @@
     Created on : Jun 25, 2015, 9:16:17 PM
     Author     : Nick
 */
-/*
-Hey! Are you a developer???
-*/
 /* 
     Created on : Jun 25, 2015, 9:25:38 PM
     Author     : Nick
@@ -20,7 +17,7 @@ Hey! Are you a developer???
 }
 /* line 9, ../sass/_main.scss */
 .section .inside {
-  max-width: 1500px;
+  max-width: 1200px;
   width: 80%;
   min-width: 400px;
   margin-left: auto;
@@ -50,17 +47,22 @@ Hey! Are you a developer???
   min-height: 600px;
   height: auto;
 }
-/* line 40, ../sass/_main.scss */
+/* line 39, ../sass/_main.scss */
+#title_section .inside {
+  padding: 0px 40px;
+  padding-bottom: 40px;
+}
+/* line 42, ../sass/_main.scss */
 #title_section .inside #flag {
   min-width: 150px;
   width: 10%;
   padding-top: 400px;
 }
-/* line 44, ../sass/_main.scss */
+/* line 46, ../sass/_main.scss */
 #title_section .inside #flag svg {
   fill: #FFFFFF;
 }
-/* line 48, ../sass/_main.scss */
+/* line 50, ../sass/_main.scss */
 #title_section .inside #main_title {
   margin: 0;
   padding: 0;
@@ -69,12 +71,12 @@ Hey! Are you a developer???
   font-size: 50px;
   color: #FFFFFF;
 }
-/* line 56, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 #title_section .inside #author {
   font-size: 14px;
   color: #FFFFFF;
 }
-/* line 60, ../sass/_main.scss */
+/* line 62, ../sass/_main.scss */
 #title_section .inside #description {
   padding-top: 10px;
   font-size: 18px;
@@ -82,7 +84,7 @@ Hey! Are you a developer???
   color: #FFFFFF;
 }
 
-/* line 73, ../sass/_main.scss */
+/* line 75, ../sass/_main.scss */
 #break1 {
   background-color: #2980B9;
 }
@@ -96,8 +98,67 @@ Hey! Are you a developer???
 #chart_4D_section .inside:after {
   clear: both;
 }
-/* line 81, ../sass/_main.scss */
+/* line 83, ../sass/_main.scss */
 #chart_4D_section .inside .question_prompt {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 6px;
+  padding-right: 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-bottom: 60px;
+}
+/* line 88, ../sass/_main.scss */
+#chart_4D_section .inside .question_prompt .main_question {
+  padding-bottom: 5px;
+  font-size: 36px;
+  font-weight: 500;
+  color: #2980B9;
+}
+/* line 101, ../sass/_main.scss */
+#chart_4D_section .inside .sexual_assault_type {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 6px;
+  padding-right: 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-bottom: 60px;
+}
+/* line 106, ../sass/_main.scss */
+#chart_4D_section .inside .sexual_assault_type p {
+  text-align: center;
+  font-size: 24px;
+}
+/* line 111, ../sass/_main.scss */
+#chart_4D_section .inside .sexual_assault_type #types_of_sexual_assault .sa_tile {
+  float: left;
+  width: 125px;
+  height: 125px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 300;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  border: 1px solid #2980B9;
+  color: #2980B9;
+}
+/* line 132, ../sass/_main.scss */
+#chart_4D_section .inside #circumstance_of_sexual_assault {
+  clear: both;
   float: left;
   width: 100%;
   margin-left: 0%;
@@ -110,74 +171,16 @@ Hey! Are you a developer???
   box-sizing: border-box;
   word-wrap: break-word;
   padding-bottom: 30px;
-}
-/* line 85, ../sass/_main.scss */
-#chart_4D_section .inside .question_prompt .prefix {
-  font-size: 32px;
-  font-weight: 500;
-  color: #2980B9;
-}
-/* line 97, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left {
-  clear: both;
-  float: left;
-  width: 33.33333%;
-  margin-left: 0%;
-  margin-right: -33.33333%;
-  padding-left: 6px;
-  padding-right: 6px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  padding: 40px 0px;
-}
-/* line 103, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left .infographic_inside {
-  margin: 0 auto;
   text-align: center;
-  vertical-align: top;
-}
-/* line 107, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_default_prompt {
-  color: #BDBDBD;
-}
-/* line 111, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt p {
-  margin: 0;
-}
-/* line 114, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt #chart_4D_percentage {
-  display: inline;
-  padding: 5px 10px;
-  border-radius: 3px;
-  font-size: 40px;
-  font-weight: 100;
-}
-/* line 121, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt #chart_4D_percentage:after {
-  content: "%";
-}
-/* line 124, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt #chart_4D_series {
   font-size: 24px;
 }
-/* line 127, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt #chart_4D_category_description {
-  font-size: 18px;
-}
-/* line 130, ../sass/_main.scss */
-#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt .static {
-  padding: 20px 0px;
-  font-weight: 300;
-}
-/* line 137, ../sass/_main.scss */
+/* line 140, ../sass/_main.scss */
 #chart_4D_section .inside #chart_4D {
+  clear: both;
   float: left;
   width: 66.66667%;
-  margin-left: 33.33333%;
-  margin-right: -100%;
+  margin-left: 0%;
+  margin-right: -66.66667%;
   padding-left: 6px;
   padding-right: 6px;
   -moz-box-sizing: border-box;
@@ -187,8 +190,75 @@ Hey! Are you a developer???
   word-wrap: break-word;
   height: 600px;
 }
+/* line 146, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  padding-left: 6px;
+  padding-right: 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding: 40px 30px;
+  padding-top: 0px;
+}
+/* line 151, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside {
+  height: 600px;
+  margin: 0 auto;
+}
+/* line 154, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_default_prompt {
+  color: #BDBDBD;
+  text-align: center;
+}
+/* line 158, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt {
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 3px;
+}
+/* line 162, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+/* line 167, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt p {
+  margin: 0;
+}
+/* line 170, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt #chart_4D_percentage {
+  display: inline;
+  padding: 5px 10px;
+  font-size: 40px;
+  font-weight: 300;
+  border-radius: 3px;
+}
+/* line 177, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt #chart_4D_percentage:after {
+  content: "%";
+}
+/* line 180, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt #chart_4D_series {
+  font-size: 24px;
+}
+/* line 183, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt #chart_4D_category_description {
+  font-size: 18px;
+}
+/* line 186, ../sass/_main.scss */
+#chart_4D_section .inside .infographic_details_left .infographic_inside #chart_4D_selected_prompt .static {
+  padding: 30px 0px 5px 0px;
+  font-weight: 300;
+}
 
-/* line 145, ../sass/_main.scss */
+/* line 196, ../sass/_main.scss */
 #break2 {
   background-color: #2C3E50;
 }

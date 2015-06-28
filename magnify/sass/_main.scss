@@ -37,6 +37,8 @@ $zen-gutter-width: 12px;
     min-height: 600px;
     height: auto;
     .inside {
+        padding: 0px 40px;
+        padding-bottom: 40px;
         #flag {
             min-width: 150px;
             width: 10%;
@@ -79,44 +81,98 @@ $zen-gutter-width: 12px;
         @include zen-grid-container;
         
         .question_prompt {
-            @include zen-grid-item(6, 1);
-            padding-bottom: 30px;
+            @include zen-clear(both);
+            @include zen-grid-item(6, 1);            
+            padding-bottom: 60px;
             
-            .prefix {
-                font-size: 32px;
+            .main_question {
+                padding-bottom: 5px;
+                font-size: 36px;
                 font-weight: 500;
                 color: $mediumblue;
             }
-            .question {
+            .description {
                 
             }
             .suffix {
                 
             }
         }
-        .infographic_details_left {            
+        .sexual_assault_type {
             @include zen-clear(both);
-            @include zen-grid-item(2, 1);
+            @include zen-grid-item(6, 1);
+            padding-bottom: 60px;
             
-            padding: 40px 0px;
-            
-            .infographic_inside {
-                margin: 0 auto;
+            p {
                 text-align: center;
-                vertical-align: top;
+                font-size: 24px;
+            }
+            #types_of_sexual_assault {
+                .sa_tile {
+                    float: left;
+                    width: $tile_side;
+                    height: $tile_side;
+                    padding: 10px;
+                    margin: 10px;                    
+                    font-weight: 300;
+                    font-size: 16px;
+                    @include round_corners();
+                    
+                    // Base styles - unselected
+                    background-color: $white;
+                    border: 1px solid $mediumblue;
+                    color: $mediumblue;
+                    
+                    // Selected style
+                    //background-color: $mediumblue;
+                    //color: $white;
+                }
+            }
+        }
+        #circumstance_of_sexual_assault {
+            @include zen-clear(both);
+            @include zen-grid-item(6, 1);
+            padding-bottom: 30px;
+            
+            text-align: center;
+            font-size: 24px;
+        }
+        #chart_4D {
+            @include zen-clear(both);
+            @include zen-grid-item(4, 1);
+            //display: inline-block;
+            height: 600px;
+        }
+        .infographic_details_left {            
+            @include zen-grid-item(2, 5);            
+            
+            padding: 40px 30px;
+            padding-top: 0px;
+            .infographic_inside {
+                height: 600px;
+                margin: 0 auto;
                 #chart_4D_default_prompt {
                     color: $grey400;
+                    text-align: center;
                 }
                 #chart_4D_selected_prompt {
+                    background-color: $grey100;
+                    padding: 20px;
+                    @include round_corners();
+                    h1 {
+                        margin: 0;
+                        margin-bottom: 20px;
+                        font-weight: 300;
+                    }
                     p {
                         margin: 0;
                     }
                     #chart_4D_percentage {
                         display: inline;
-                        padding: 5px 10px;
-                        border-radius: 3px;
+                        padding: 5px 10px;                        
                         font-size: 40px;
-                        font-weight: 100;
+                        font-weight: 300;
+                        @include round_corners();
                     }
                     #chart_4D_percentage:after {
                         content: "%"
@@ -128,16 +184,11 @@ $zen-gutter-width: 12px;
                         font-size: 18px;
                     }
                     .static {
-                        padding: 20px 0px;
+                        padding: 30px 0px 5px 0px;
                         font-weight: 300;
                     }
                 }
             }
-        }
-        #chart_4D {
-            @include zen-grid-item(4, 3);
-            //display: inline-block;
-            height: 600px;
         }
     }
 }

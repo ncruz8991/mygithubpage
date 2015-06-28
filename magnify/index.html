@@ -146,16 +146,36 @@
         <div id="chart_4D_section" class="section graphic_section">
             <div class="inside">
                 <div class="question_prompt">
-                    <div class="prefix">What were the circumstances of the sexual assaults that occurred?</div>   
-                    <div id="question_4D1" class="question">In the past year, has anyone fondled, kissed, or rubbed against the private parts of your body or removed your clothes without your consent by…</div>
-                    <!--<div id="question_4D2" class="question">In the past year, has anyone fondled, kissed, or rubbed against the private parts of your body or removed your clothes without your consent by…</div>
-                    <div id="question_4D3" class="question">In the past year, has anyone fondled, kissed, or rubbed against the private parts of your body or removed your clothes without your consent by…</div>
-                    <div id="question_4D4" class="question">In the past year, has anyone fondled, kissed, or rubbed against the private parts of your body or removed your clothes without your consent by…</div>-->
+                    <div class="main_question">What were the circumstances of the sexual assaults that occurred?</div>   
+                    <div class="description">Students were asked a series of questions regarding non-consensual behaviors they might have experienced within the past year. These questions contained varying levels of physical contact during the sexual assault. Select a question prompt below and a response on the chart to find out more information regarding how the reported sexual assaults occurred.</div>
                 </div>
+                <div class="sexual_assault_type">
+                    <p>Type of sexual assault</p>
+                    <div id="types_of_sexual_assault">
+                        <!--
+                            These options are switched on click
+                            and are named by their table in results.pdf
+                        -->
+                        <div id="sa_type_4D1" class="sa_tile"></div>
+                        <div id="sa_type_4D2" class="sa_tile"></div>
+                        <div id="sa_type_4D3" class="sa_tile"></div>
+                        <div id="sa_type_4D4" class="sa_tile"></div>
+                        <div id="sa_type_4D2-4" class="sa_tile"></div>
+                        <div id="sa_type_4D1-4" class="sa_tile"></div>
+                    </div>
+                </div>
+                <div id="circumstance_of_sexual_assault">
+                    Circumstance of sexual assault
+                </div>
+                <div id="chart_4D" class="infographic"></div>
                 <div class="infographic_details_left">
                     <div class="infographic_inside">
-                        <div id="chart_4D_default_prompt">Click on a bar on the right for more information.</div>
-                        <div id="chart_4D_selected_prompt" style="display: none">
+                        <!-- Default prompt before reader selects a bar -->
+                        <div id="chart_4D_default_prompt">Click on a bar on the chart for more information.</div>
+                        
+                        <!-- This takes the place of the default prompt -->
+                        <div id="chart_4D_selected_prompt">
+                            <h1>This means that...</h1>
                             <p id="chart_4D_percentage"></p>
                             <p class="static">of</p>
                             <p id="chart_4D_series"></p>
@@ -163,8 +183,7 @@
                             <p id="chart_4D_category_description"></p>
                         </div>
                     </div>
-                </div>                
-                <div id="chart_4D" class="infographic"></div>
+                </div>
             </div>
         </div>
         <div id="break2" class="section text_section">
