@@ -1,0 +1,264 @@
+/* 
+    Created on : Jun 25, 2015, 9:16:17 PM
+    Author     : Nick
+*/
+/* line 1, ../sass/_main.scss */
+.filler-div {
+  display: block;
+  height: 8658px;
+  width: 100%;
+  background-color: #000000;
+}
+
+/* line 8, ../sass/_main.scss */
+.clip {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  display: none;
+}
+
+/* line 20, ../sass/_main.scss */
+#clipA {
+  display: block;
+}
+
+/* line 24, ../sass/_main.scss */
+#minimap-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/* line 30, ../sass/_main.scss */
+#minimap-wrapper #minimap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: auto;
+  opacity: 0.7;
+}
+@media (max-width: 600px) {
+  /* line 30, ../sass/_main.scss */
+  #minimap-wrapper #minimap {
+    width: 100%;
+  }
+}
+/* line 42, ../sass/_main.scss */
+#minimap-wrapper #minimap #backdrop {
+  fill: #000000;
+  opacity: 0.7;
+}
+/* line 47, ../sass/_main.scss */
+#minimap-wrapper #minimap #roads {
+  stroke: #BDBDBD;
+}
+/* line 51, ../sass/_main.scss */
+#minimap-wrapper #minimap .svg_artfair {
+  opacity: 0;
+}
+/* line 55, ../sass/_main.scss */
+#minimap-wrapper #minimap #af_south_u {
+  fill: #FFA726;
+}
+/* line 59, ../sass/_main.scss */
+#minimap-wrapper #minimap #af_summer1 {
+  opacity: 1;
+  fill: #2196F3;
+}
+/* line 64, ../sass/_main.scss */
+#minimap-wrapper #minimap #af_summer2 {
+  fill: #2196F3;
+}
+/* line 68, ../sass/_main.scss */
+#minimap-wrapper #minimap #af_state {
+  fill: #FF4081;
+}
+/* line 72, ../sass/_main.scss */
+#minimap-wrapper #minimap #af_original {
+  fill: #009688;
+}
+/* line 76, ../sass/_main.scss */
+#minimap-wrapper #minimap #tour_path {
+  fill: none;
+  stroke: #FFFFFF;
+}
+/* line 82, ../sass/_main.scss */
+#minimap-wrapper #artfair_name {
+  background-color: #2196F3;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  padding: 8px 12px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* line 94, ../sass/_main.scss */
+#artist_info_wrapper {
+  position: fixed;
+  left: 60px;
+  bottom: 60px;
+  z-index: 1000;
+  width: 40%;
+  max-width: 350px;
+  height: auto;
+  background-color: #009688;
+  padding: 18px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  opacity: 0;
+}
+/* line 108, ../sass/_main.scss */
+#artist_info_wrapper #artist_name {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 300;
+}
+/* line 113, ../sass/_main.scss */
+#artist_info_wrapper #artist_title {
+  color: #EEEEEE;
+  font-size: 22px;
+  font-weight: 100;
+}
+/* line 119, ../sass/_main.scss */
+#artist_info_wrapper #artist_homepage {
+  padding-top: 3px;
+}
+/* line 121, ../sass/_main.scss */
+#artist_info_wrapper #artist_homepage #artist_homepage_link {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  color: #EEEEEE;
+  text-decoration: none;
+}
+/* line 129, ../sass/_main.scss */
+#artist_info_wrapper #button_wrapper {
+  text-align: right;
+}
+/* line 131, ../sass/_main.scss */
+#artist_info_wrapper #button_wrapper p {
+  display: inline;
+  color: #E0E0E0;
+  font-size: 14px;
+  font-weight: 100;
+  font-style: italic;
+  position: relative;
+  top: -35px;
+}
+/* line 141, ../sass/_main.scss */
+#artist_info_wrapper #button_wrapper svg #full_interview_button {
+  fill: #FFA726;
+}
+/* line 144, ../sass/_main.scss */
+#artist_info_wrapper #button_wrapper svg #play {
+  fill: #FFFFFF;
+}
+
+/* line 151, ../sass/_main.scss */
+#click_prompt {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #FFFFFF;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100;
+  pointer-events: none;
+}
+
+/* line 165, ../sass/_main.scss */
+#scroll_prompt {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto 0;
+  display: block;
+  color: #FFFFFF;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 100;
+  pointer-events: none;
+}
+/* line 179, ../sass/_main.scss */
+#scroll_prompt svg {
+  width: 300px;
+  height: 100px;
+}
+/* line 182, ../sass/_main.scss */
+#scroll_prompt svg polygon {
+  fill: #FFFFFF;
+}
+
+/* line 188, ../sass/_main.scss */
+#title_card {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: auto;
+  padding: 30px;
+  background-color: #FFA726;
+  color: #FFFFFF;
+  z-index: 420;
+}
+/* line 200, ../sass/_main.scss */
+#title_card .lines {
+  text-transform: uppercase;
+}
+/* line 203, ../sass/_main.scss */
+#title_card #line_1 {
+  font-size: 41px;
+  font-weight: 100;
+}
+/* line 207, ../sass/_main.scss */
+#title_card #line_2 {
+  font-size: 32px;
+  font-weight: 100;
+}
+/* line 211, ../sass/_main.scss */
+#title_card #line_3 {
+  font-size: 152px;
+  font-weight: 100;
+  margin-top: -20px;
+}
+/* line 216, ../sass/_main.scss */
+#title_card #line_4 {
+  font-size: 95px;
+  font-weight: 100;
+  margin-top: -35px;
+}
+/* line 221, ../sass/_main.scss */
+#title_card #line_5 {
+  font-size: 163px;
+  font-weight: 100;
+  margin-top: -32px;
+}
+/* line 226, ../sass/_main.scss */
+#title_card #line_6 {
+  font-size: 145px;
+  font-weight: 100;
+  margin-top: -46px;
+}
+/* line 231, ../sass/_main.scss */
+#title_card .credit {
+  font-weight: 500;
+}
+
+/* line 11, ../sass/styles.scss */
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
