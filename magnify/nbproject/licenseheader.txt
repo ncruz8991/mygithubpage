@@ -1,2 +1,0 @@
-<#if licenseFirst??>
-</#if>
