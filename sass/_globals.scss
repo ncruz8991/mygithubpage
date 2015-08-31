@@ -3,7 +3,7 @@ $Raleway: 'Raleway', sans-serif;
 $Rokkitt: 'Rokkitt', serif;
 
 $black: #000000;
-$white: #FFFFFF;
+//$white: #FFFFFF;
 
 $pink: #F4D1E1;
 $salmon: #FC8C85;
@@ -11,8 +11,15 @@ $green: #4DBAA8;
 $lightgreen: #CAFBD4;
 $yellow: #FAE896;
 
-$buttonside: 100px;
-$buttonwidth: $buttonside;
-$buttonheight: $buttonside;
-$buttonbackground: rgba(255, 255, 255, 0.25);
-$buttonhover: rgba(255, 255, 255, 0.7);
+// Material Design
+$darkblue: #2C3E50;
+$red: #E74C3C;
+$white: #ECF0F1;
+$lightblue: #3498DB;
+$blue: #2980B9;
+
+// Bubble sizes
+$educationBubbleSize: 800px;
+$projectBubbleSize: 800px;
+$tmdBubbleSize: 800px;
+$skillsBubbleSize: 800px;

@@ -1,0 +1,30 @@
+@mixin bubble($size_in, $fill_in) {
+	position: relative;
+	svg {
+    display: block;
+    margin: 50px auto;
+    width: $size_in;
+    height: $size_in;
+    .bubble {
+      fill: $fill_in;
+      cx: $size_in / 2;
+      cy: $size_in / 2;
+      //r: $size_in / 2 - 10;
+    }
+    .outline {
+    	fill: $white;
+    	cx: $size_in / 2;
+      cy: $size_in / 2;
+      r: $size_in / 2;
+    }
+  }
+}
+
+@mixin centerInBubble($size_in, $ratio, $textalign) {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: $textalign;
+  width: $size_in * $ratio;
+}

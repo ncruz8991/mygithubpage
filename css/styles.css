@@ -1,69 +1,195 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:400,100,500,700,300,200,600,800,900|Rokkitt:400,700);
-/* line 2, ../sass/_main.scss */
-.buttons .button {
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,500,700,300,200,600,800,900);
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+/* line 1, ../sass/_main.scss */
+.color-pallette {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  width: 100px;
-  height: 100px;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.25);
-  transition: all 150ms ease-in-out;
-  cursor: pointer;
-}
-/* line 14, ../sass/_main.scss */
-.buttons .button:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-/* line 18, ../sass/_main.scss */
-.button_left {
+  top: 0;
   left: 0;
+  width: auto;
+  height: auto;
 }
-
+/* line 9, ../sass/_main.scss */
+.color-pallette .color {
+  display: block;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+}
+/* line 15, ../sass/_main.scss */
+.color-pallette .color1 {
+  background-color: #2C3E50;
+}
+/* line 18, ../sass/_main.scss */
+.color-pallette .color2 {
+  background-color: #2980B9;
+}
 /* line 21, ../sass/_main.scss */
-.button_right {
-  right: 0;
+.color-pallette .color3 {
+  background-color: #E74C3C;
+}
+/* line 24, ../sass/_main.scss */
+.color-pallette .color4 {
+  background-color: #3498DB;
 }
 
-/* line 25, ../sass/_main.scss */
-.experience {
-  color: #000000;
+/* line 30, ../sass/_main.scss */
+.section {
+  width: 100%;
+  min-height: 400px;
 }
-/* line 27, ../sass/_main.scss */
-.experience .position {
-  font-family: "Rokkitt", serif;
-  padding: 30px;
-  max-width: 650px;
-  margin: 0 auto;
+
+/* line 35, ../sass/_main.scss */
+.intro_div {
+  width: 100%;
+  height: 500px;
+  background-color: #3498DB;
 }
-/* line 32, ../sass/_main.scss */
-.experience .position .title {
-  font-size: 48px;
-  font-family: "Raleway", sans-serif;
-  line-height: 100%;
-  margin: 4px 0px;
-}
-/* line 38, ../sass/_main.scss */
-.experience .position .company {
-  font-size: 22px;
-  text-transform: uppercase;
-}
+
 /* line 42, ../sass/_main.scss */
-.experience .position .line {
-  font-size: 16px;
-  margin: 4px 0px;
+.education .subsection {
+  position: relative;
+}
+/* line 3, ../sass/_mixins.scss */
+.education .subsection svg {
+  display: block;
+  margin: 50px auto;
+  width: 800px;
+  height: 800px;
+}
+/* line 8, ../sass/_mixins.scss */
+.education .subsection svg .bubble {
+  fill: #FAE896;
+  cx: 400px;
+  cy: 400px;
+}
+/* line 14, ../sass/_mixins.scss */
+.education .subsection svg .outline {
+  fill: #ECF0F1;
+  cx: 400px;
+  cy: 400px;
+  r: 400px;
+}
+/* line 45, ../sass/_main.scss */
+.education .degree {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 480px;
 }
 
-/* line 7, ../sass/styles.scss */
+/* line 51, ../sass/_main.scss */
+.projects .subsection {
+  position: relative;
+}
+/* line 3, ../sass/_mixins.scss */
+.projects .subsection svg {
+  display: block;
+  margin: 50px auto;
+  width: 800px;
+  height: 800px;
+}
+/* line 8, ../sass/_mixins.scss */
+.projects .subsection svg .bubble {
+  fill: #CAFBD4;
+  cx: 400px;
+  cy: 400px;
+}
+/* line 14, ../sass/_mixins.scss */
+.projects .subsection svg .outline {
+  fill: #ECF0F1;
+  cx: 400px;
+  cy: 400px;
+  r: 400px;
+}
+/* line 54, ../sass/_main.scss */
+.projects .project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 480px;
+}
+
+/* line 60, ../sass/_main.scss */
+.experience .subsection {
+  position: relative;
+}
+/* line 3, ../sass/_mixins.scss */
+.experience .subsection svg {
+  display: block;
+  margin: 50px auto;
+  width: 800px;
+  height: 800px;
+}
+/* line 8, ../sass/_mixins.scss */
+.experience .subsection svg .bubble {
+  fill: #4DBAA8;
+  cx: 400px;
+  cy: 400px;
+}
+/* line 14, ../sass/_mixins.scss */
+.experience .subsection svg .outline {
+  fill: #ECF0F1;
+  cx: 400px;
+  cy: 400px;
+  r: 400px;
+}
+/* line 63, ../sass/_main.scss */
+.experience .position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 480px;
+}
+
+/* line 69, ../sass/_main.scss */
+.skills .subsection {
+  position: relative;
+}
+/* line 3, ../sass/_mixins.scss */
+.skills .subsection svg {
+  display: block;
+  margin: 50px auto;
+  width: 800px;
+  height: 800px;
+}
+/* line 8, ../sass/_mixins.scss */
+.skills .subsection svg .bubble {
+  fill: #FC8C85;
+  cx: 400px;
+  cy: 400px;
+}
+/* line 14, ../sass/_mixins.scss */
+.skills .subsection svg .outline {
+  fill: #ECF0F1;
+  cx: 400px;
+  cy: 400px;
+  r: 400px;
+}
+/* line 72, ../sass/_main.scss */
+.skills .list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: 480px;
+}
+
+/* line 9, ../sass/styles.scss */
 body {
-  font-family: "Rokkitt", serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #FC8C85;
+  background-color: #ECF0F1;
 }

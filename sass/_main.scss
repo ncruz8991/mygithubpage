@@ -1,47 +1,75 @@
-.buttons {
-  .button {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    width: $buttonwidth;
-    height: $buttonheight;
-    z-index: 1;
-    background-color: $buttonbackground;
-    transition: all 150ms ease-in-out;
-    cursor: pointer;
-  }
-  .button:hover {
-    background-color: $buttonhover;
-  }
-}
-.button_left {
+.color-pallette {
+  $palletteWidth: 80px;
+  $spacing: 10px;
+  position: fixed;
+  top: 0;
   left: 0;
+  width: auto;
+  height: auto;
+  .color {
+    display: block;
+    margin: $spacing;
+    width: $palletteWidth - $spacing;
+    height: $palletteWidth - $spacing;
+  }
+  .color1 {
+    background-color: $darkblue;
+  }
+  .color2 {
+    background-color: $blue;
+  }
+  .color3 {
+    background-color: $red;
+  }
+  .color4 {
+    background-color: $lightblue;
+  }
 }
-.button_right {
-  right: 0;
+
+
+.section {
+  width: 100%;
+  min-height: 400px;
+}
+
+.intro_div {
+  width: 100%;
+  height: 500px;
+  background-color: $lightblue;
+}
+
+.education {
+  .subsection {
+    @include bubble($educationBubbleSize, $yellow);
+  }
+  .degree {
+    @include centerInBubble($educationBubbleSize, 0.6, left);
+  }
+}
+
+.projects {
+  .subsection {
+    @include bubble($projectBubbleSize, $lightgreen);
+  }
+  .project {
+    @include centerInBubble($projectBubbleSize, 0.6, left);
+  }
 }
 
 .experience {
-  color: $black;
+  .subsection {
+    @include bubble($tmdBubbleSize, $green);
+  }
   .position {
-    font-family: $Rokkitt;
-    padding: 30px;
-    max-width: 650px;
-    margin: 0 auto;
-    .title {
-      font-size: 48px;
-      font-family: $Raleway;
-      line-height: 100%;
-      margin: 4px 0px;
-    }
-    .company {
-      font-size: 22px;
-      text-transform: uppercase;
-    }
-    .line {
-      font-size: 16px;
-      margin: 4px 0px;
-    }
+    @include centerInBubble($tmdBubbleSize, 0.6, left);
+  }
+}
+
+.skills {
+  .subsection {
+    @include bubble($skillsBubbleSize, $salmon);
+  }
+  .list {
+    @include centerInBubble($skillsBubbleSize, 0.6, left);
   }
 }
