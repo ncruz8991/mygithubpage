@@ -14,7 +14,9 @@ $yellow: #FAE896;
 // Material Design
 $darkblue: #2C3E50;
 $red: #E74C3C;
+$hoverred: #EB6A5C;
 $white: #ECF0F1;
+$hoverwhite: rgba(236, 240, 241, 0.54);
 $lightblue: #3498DB;
 $blue: #2980B9;
 
@@ -23,3 +25,8 @@ $educationBubbleSize: 800px;
 $projectBubbleSize: 800px;
 $tmdBubbleSize: 800px;
 $skillsBubbleSize: 800px;
+
+$educationColor: $blue;
+$projectsColor: $darkblue;
+$experienceColor: $lightblue;
+$skillsColor: $red;

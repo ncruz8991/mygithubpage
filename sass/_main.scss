@@ -13,34 +13,40 @@
     height: $palletteWidth - $spacing;
   }
   .color1 {
-    background-color: $darkblue;
+    background-color: $educationColor;
   }
   .color2 {
-    background-color: $blue;
+    background-color: $projectsColor;
   }
   .color3 {
-    background-color: $red;
+    background-color: $experienceColor;
   }
   .color4 {
-    background-color: $lightblue;
+    background-color: $skillsColor;
   }
 }
 
+a {
+  color: $white;
+  font-style: italic;
+  text-decoration: none;
+}
 
 .section {
   width: 100%;
   min-height: 400px;
+  color: $white;
 }
 
-.intro_div {
+header {
   width: 100%;
   height: 500px;
-  background-color: $lightblue;
+  background-color: $yellow;
 }
 
 .education {
   .subsection {
-    @include bubble($educationBubbleSize, $yellow);
+    @include bubble($educationBubbleSize, $educationColor);
   }
   .degree {
     @include centerInBubble($educationBubbleSize, 0.6, left);
@@ -49,7 +55,7 @@
 
 .projects {
   .subsection {
-    @include bubble($projectBubbleSize, $lightgreen);
+    @include bubble($projectBubbleSize, $projectsColor);
   }
   .project {
     @include centerInBubble($projectBubbleSize, 0.6, left);
@@ -58,7 +64,7 @@
 
 .experience {
   .subsection {
-    @include bubble($tmdBubbleSize, $green);
+    @include bubble($tmdBubbleSize, $experienceColor);
   }
   .position {
     @include centerInBubble($tmdBubbleSize, 0.6, left);
@@ -67,9 +73,51 @@
 
 .skills {
   .subsection {
-    @include bubble($skillsBubbleSize, $salmon);
+    @include bubble($skillsBubbleSize, $skillsColor);
   }
   .list {
     @include centerInBubble($skillsBubbleSize, 0.6, left);
   }
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: $blue;
+  color: $white;
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    font-weight: 100;
+  }
+
+  .buttons {
+    margin: 0 auto;
+    width: auto;
+    .button {
+      width: 350px;
+      height: auto;
+      display: block;
+      font-size: 30px;
+      padding: 15px 19px;
+      margin: 0px auto;
+      border-radius: 3px;
+      color: $blue;
+      background-color: $white;
+      transition: all 150ms ease-in-out;
+      text-align: center;
+      cursor: pointer;
+      font-weight: 100;
+      &:hover {
+        background-color: $hoverwhite;
+      }
+    }
+  }
+
+  
 }
