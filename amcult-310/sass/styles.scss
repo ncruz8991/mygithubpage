@@ -1,0 +1,203 @@
+$lightyellow: #F3EED5;
+$lightblue: #B4D9D0;
+$lightpink: #F28CAB;
+$peach: #FFD0BD;
+$red: #DC5C6C;
+
+$white: #FFFFFF;
+$black: #000000;
+
+$mastersans:'Montserrat', sans-serif;
+$masterserif: 'Merriweather', serif;
+
+$eventmargintop: 70px;
+$quotemargintop: 40px;
+$informationmargintop: 40px;
+$leftmargin: 250px;
+$rightmargin: 250px;
+
+$informationborder: solid 3px $lightpink;
+$informationpadding: 30px;
+
+body {
+	margin: 0;
+}
+
+.titlecard {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	z-index: 0;
+	.title_img {
+		width: 100%;
+		min-width: 1250px;
+		position: relative;
+		top: -120px;
+	}
+
+	.caption {
+		position: absolute;
+		z-index: 1;
+		bottom: 10;
+		right: 40;
+		font-family: $mastersans;
+		width: 400px;
+		color: $white;
+	}
+}
+
+.title {
+	font-family: $mastersans;
+	color: $black;
+	font-size: 60px;
+	margin-left: $leftmargin;
+	margin-right: $rightmargin;
+	font-weight: 700;
+}
+
+.year {
+	position: relative;
+	color: $white;
+	font-size: 55px;
+	font-family: $mastersans;
+	margin-top: $eventmargintop;
+	padding-left: $leftmargin;
+
+	&:before {
+		content: url(../eventcircle.svg);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.eventname {
+	color: $black;
+	font-size: 22px;
+	font-family: $mastersans;
+	margin-left: $leftmargin;
+	margin-right: $rightmargin;
+}
+
+.quote {
+	position: relative;
+	color: $black;
+	font-style: italic;
+	font-size: 16px;
+	font-family: $masterserif;
+	text-align: center;
+	margin-top: $quotemargintop;
+	$quotemarginleftright: 50px;
+	margin-left: $leftmargin + $quotemarginleftright;
+	margin-right: $rightmargin + $quotemarginleftright;
+	line-height: 180%;
+
+	&:before {
+		content: '“';
+		top: 30px;
+		left: 0;
+	}
+
+	&:after {
+		content: '”';
+		right: 0;
+		bottom: -15px;
+	}
+
+	&:before, &:after {
+		position: absolute;
+		z-index: -1;
+		color: $lightyellow;
+		font-size: 100px;
+		opacity: 0.7;
+	}
+}
+
+.information-header {
+	margin-left: $leftmargin;
+	font-size: 30px;
+	color: $black;
+	font-family: $mastersans;
+	padding-left: $informationpadding;
+	padding-bottom: 10px;
+	border-left: $informationborder;
+	margin-top: $informationmargintop;
+}
+
+.information {
+	margin-left: $leftmargin;
+	margin-right: $rightmargin;
+	font-size: 16px;
+	font-family: $masterserif;
+	line-height: 150%;
+	padding-left: $informationpadding;
+	border-left: $informationborder;
+}
+
+.first {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	min-width: 1250px;
+	// height: 700px;
+	background-color: $lightblue;
+	padding-top: 100px;
+	padding-bottom: 200px;
+
+	$svgmargin: $leftmargin - 50px;
+
+	.svg_timeline_line {
+		position: absolute;
+		top: 0;
+		width: 20;
+		height: 100%;
+		margin-left: $svgmargin;
+		.timeline_line {
+			width: 10;
+			height: 100%;
+			fill: $lightyellow;
+		}
+	}
+
+	.svg_events {
+		$eventwidth: 40;
+		$eventx: $eventwidth / 2;
+		$eventradius: $eventx - 4;
+
+		position: absolute;
+		top: 0;
+		left: $svgmargin - $eventx + 5;
+		// margin-left: $svgmargin - $eventx + 5;
+
+		width: $eventwidth;
+		height: 100%;
+
+		circle {
+			cx: $eventx;
+			cy: $eventx;
+			r: $eventradius;
+			fill: $lightyellow;
+		}
+
+		.event1 {
+			cx: $eventx;
+			cy: $eventx + 114;
+			r: $eventradius;
+			fill: $lightyellow;
+		}
+	}
+
+	img {
+		display: block;
+		margin: 30px auto;
+		width: 700px;
+	}
+
+	.caption {
+		margin: 0 auto;
+		margin-top: -20px;
+		width: 700px;
+		font-family: $mastersans;
+		font-size: 16px;
+	}
+}
